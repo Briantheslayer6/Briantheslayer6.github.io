@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title> Brians Portfolio </tile>
+		<meta charset = "utf-8">
+	</head>
+	
+	<body>
+		<p>I like to code and make cool projects for the world</p>
+	</body>
+</html>
