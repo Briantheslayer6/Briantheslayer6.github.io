@@ -36,17 +36,6 @@ let useShip = document.getElementById("useShip");
 useShip.addEventListener("click", function() {
       
       copyShippingToBilling(this.checked);
-      
-      if(this.checked) {
-            firstnameBill.value = firstnameShip.value;
-            lastnameBill.value = lastnameShip.value;
-            address1Bill.value = address1Ship.value;
-            address2Bill.value = address2Ship.value;
-            cityBill.value = cityShip.value;
-            countryBill.value = countryShip.value;
-            codeBill.value = codeShip.value;
-            stateBill.selectedIndex = stateShip.selectedIndex;
-      }
 });
 
 for (let i = 0; i < formElements.length; i++) {
@@ -58,5 +47,17 @@ for (let i = 0; i < formElements.length; i++) {
 
 function showValidationError(evt) {
       errorBox.textContent = "Complete all highlighted fields";
+}
+function copyShippingToBilling(checked) {
+      if(checked) {
+            firstnameBill.value = firstnameShip.value;
+            lastnameBill.value = lastnameShip.value;
+            address1Bill.value = address1Ship.value;
+            address2Bill.value = address2Ship.value;
+            cityBill.value = cityShip.value;
+            countryBill.value = countryShip.value;
+            codeBill.value = codeShip.value;
+            stateBill.selectedIndex = stateShip.selectedIndex;
+      }
 }
 
